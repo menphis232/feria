@@ -12,7 +12,7 @@ const routes: Routes = [
         path: 'ink',
         children: [
           {
-            path: '',
+            path: 'ink',
             loadChildren: '../ink/ink.module#InkModule'
           }
         ]

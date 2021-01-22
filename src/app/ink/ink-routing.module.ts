@@ -5,7 +5,7 @@ import { InkPage } from './ink.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'ink',
     component: InkPage
   }
 ];
