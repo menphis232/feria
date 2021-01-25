@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class InkPage implements OnInit {
 
   slideOpts = {
-    initialSlide: 1,
-    speed: 400
+    initialSlide: 0,
+    slidesPerView: 3,
+    speed: 400,
+   
+   
   };
 
   constructor() { }

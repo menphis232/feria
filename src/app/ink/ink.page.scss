@@ -1,0 +1,22 @@
+.swiper-slide img {
+    width: 50%;
+}
+
+// ion-item{
+// --border-color:red;
+// --border-radius:20px;
+// }
+ion-item{
+    border-radius: 20px;
+    border: 2px solid red;
+    margin-bottom: 15px;
+    // background: rgb(60,60,60);
+    background: linear-gradient(360deg, rgba(60,60,60,1) 38%, rgba(77,77,77,1) 52%);
+}
+
+ion-button{
+    --border-color: #666666;
+    color: #666666;
+}
+
+

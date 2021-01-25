@@ -1,11 +1,59 @@
-<ion-slides pager="true" [options]="slideOpts">
-  <ion-slide>
-    <h1>Slide 1</h1>
-  </ion-slide>
-  <ion-slide>
-    <h1>Slide 2</h1>
-  </ion-slide>
-  <ion-slide>
-    <h1>Slide 3</h1>
-  </ion-slide>
-</ion-slides>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+          <div class="ion-padding"><img src="../assets/slides/screen-1.jpg"/></div>
+        </ion-slide>
+        <ion-slide>
+          <div class="ion-padding"><img src="../assets/slides/screen-1.jpg"/></div>
+        </ion-slide>
+        <ion-slide>
+          <div class="ion-padding"><img src="../assets/slides/screen-1.jpg"/></div>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+    <ion-col size="12">
+      
+        <ion-img src="../assets/icon/barrita.png"></ion-img>
+  
+      <!-- <img src="../assets/icon/barrita.png"/> -->
+    </ion-col>
+    <ion-col size="12">
+  
+     <ion-row>
+       <ion-col size="12">
+        <ion-item >
+          <ion-avatar slot="start">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+          </ion-avatar>
+          <ion-label>
+            
+            <h2><ion-icon name="star" color="danger"></ion-icon> H2 Title Text</h2>
+            <p>25.000 <smal>seguidores</smal></p>
+          </ion-label>
+          <ion-button fill="outline" slot="end">Seguir</ion-button>
+        </ion-item>
+        <p class="ion-padding-start">hola que tal soy el chico  de  las poesias</p>
+       </ion-col>
+
+       <!-- <ion-col size="12">
+        <ion-item >
+          <ion-avatar slot="start">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+          </ion-avatar>
+          <ion-label>
+            <h2><ion-icon name="star" color="danger"></ion-icon> H2 Title Text</h2>
+            <p>25.000 <smal>seguidores</smal></p>
+          </ion-label>
+          <ion-button fill="outline" slot="end">Seguir</ion-button>
+        </ion-item>
+        <p class="ion-padding-start">hola que tal soy el chico  de  las poesias</p>
+       </ion-col> -->
+     </ion-row>
+        
+    </ion-col>
+  </ion-row>
+</ion-grid>
