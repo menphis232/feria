@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NavParams, NavController, IonSlides, Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-ink',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ink.page.scss'],
 })
 export class InkPage implements OnInit {
-
+  @ViewChild('slideHistoria') slider: IonSlides;
   slideOpts = {
     initialSlide: 0,
     slidesPerView: 3,
@@ -19,5 +20,11 @@ export class InkPage implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  slidePrev(){
+    this.slider.slidePrev();
+  }
+  slideNext(){
+    this.slider.slideNext();
+  }
 }

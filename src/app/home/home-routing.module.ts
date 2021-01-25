@@ -5,7 +5,7 @@ import { HomePage } from './home.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomePage,
     children: [
       {
@@ -13,12 +13,52 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../ink/ink.module#InkPageModule'
+            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
           }
         ]
       },
-    
+      {
+        path: 'market',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
+          }
+        ]
+      },
+      {
+        path: 'profile',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
+          }
+        ]
+      },
+      {
+        path: 'map',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
+          }
+        ]
+      },
+      {
+        path: 'about',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
+          }
+        ]
+      },
     ]
+  },
+  {
+    path: '',
+    redirectTo: '/home/ink',
+    pathMatch: 'full'
   }
 ];
 

@@ -1,18 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthService } from './services/auth.service';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
-  {
-    path: 'ink',
-    loadChildren: () => import('./ink/ink.module').then( m => m.InkPageModule)
-  },
-  {
     path: '',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule),
+    canActivate:[AuthService] 
   },
   {
     path: 'login',

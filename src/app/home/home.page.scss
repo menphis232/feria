@@ -1,3 +1,17 @@
 .hydrated {
-    border-radius: 20px;
+    border-radius: 10px;
+}
+ion-tab-bar{
+    --color-selected: #fff !important;
+    margin: 3px;
+    border: 1px solid #565656;
+    background: #393939;
+}
+.border-right{
+    border-right: solid 1px #565656;
+    border-radius: 0px;
+}
+ion-tab-button{
+    border-radius: 0px;
+    background: #393939;
 }
