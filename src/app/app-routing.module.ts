@@ -19,7 +19,19 @@ const routes: Routes = [
   {
     path: 'organizan',
     loadChildren: () => import('./organizan/organizan.module').then( m => m.OrganizanPageModule)
+  },  {
+    path: 'distribuyen',
+    loadChildren: () => import('./distribuyen/distribuyen.module').then( m => m.DistribuyenPageModule)
   },
+  {
+    path: 'compras',
+    loadChildren: () => import('./compras/compras.module').then( m => m.ComprasPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+
   // {
   //   path: 'home',
   //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)

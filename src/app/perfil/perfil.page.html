@@ -4,7 +4,7 @@
   <ion-row>
     <ion-col size="12">
       <ion-row>
-        <div class="arrow-b" (click)="slidePrev()">
+        <!-- <div class="arrow-b" (click)="slidePrev()">
           <ion-icon color="medium" name="caret-back"></ion-icon>
         </div>
         <div class="arrow-f" (click)="slideNext()">
@@ -21,12 +21,12 @@
             <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
           </ion-slide>
    
-        </ion-slides>
+        </ion-slides> -->
       </ion-row>
     </ion-col>
     <ion-col size="12">
       
-        <ion-img src="../assets/icon/barradiamante.png"></ion-img>
+        <!-- <ion-img src="../assets/icon/barradiamante.png"></ion-img> -->
   
       <!-- <img src="../assets/icon/barrita.png"/> -->
     </ion-col>
@@ -34,16 +34,36 @@
   
      <ion-row>
        <ion-col size="12">
-        <ion-item >
-          <ion-avatar slot="start">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+        <ion-item class="claseEspecial">
+          <ion-avatar class="padding-5-1 border-r-5 slide-shadow" slot="start">
+            <img  src="../assets/icon/avatarNativo.png">
           </ion-avatar>
-          <ion-label>
+          <ion-row>
+            <ion-col sice="12">
+              <ion-label>
             
-            <h2><ion-icon name="star" color="danger"></ion-icon> H2 Title Text</h2>
-            <p>25.000 <small>seguidores</small></p>
-          </ion-label>
-          <ion-button fill="outline" slot="end">Seguir</ion-button>
+                <span class="padding-5 border-r-5 slide-shadow"><ion-icon name="star" class="ft13icon"  color="primary"></ion-icon></span> <ion-text class="ft-nombre">Alvaro Bruss</ion-text> 
+                <p class="puntos"> <ion-text color="primary">480.000 ptos</ion-text></p>
+              </ion-label>
+            </ion-col>
+            <ion-col size="12">
+              <ion-list>
+                <ion-item class="claseEspecial">
+                  <ion-col size="6"> <ion-text class="ft12seguidor">Seguidores:</ion-text></ion-col>
+                  <ion-col size="6" class="ion-text-right"><ion-text class="ft12cantidad">0000</ion-text></ion-col>
+                 
+                </ion-item>
+                <ion-item class="claseEspecial">
+                  <ion-col size="6"> <ion-text class="ft12seguidor">Seguidos:</ion-text></ion-col>
+                  <ion-col size="6" class="ion-text-right"><ion-text class="ft12cantidad">0000</ion-text></ion-col>
+                 
+                </ion-item>
+              </ion-list>
+            </ion-col>
+        
+          </ion-row>
+   
+          
         </ion-item>
         <p class="ion-padding-start">hola que tal soy el chico  de  las poesias</p>
        </ion-col>

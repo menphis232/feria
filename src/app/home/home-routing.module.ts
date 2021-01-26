@@ -9,6 +9,15 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
+        path: 'organizan',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../organizan/organizan.module').then( m => m.OrganizanPageModule)
+          }
+        ]
+      },
+      {
         path: 'ink',
         children: [
           {
@@ -18,11 +27,11 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'market',
+        path: 'distribuyen',
         children: [
           {
             path: '',
-            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
+            loadChildren: () => import('../distribuyen/distribuyen.module').then( m => m.DistribuyenPageModule)
           }
         ]
       },
@@ -31,7 +40,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
+            loadChildren: () => import('../perfil/perfil.module').then( m => m.PerfilPageModule)
           }
         ]
       },
@@ -45,11 +54,11 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'about',
+        path: 'compras',
         children: [
           {
             path: '',
-            loadChildren: () => import('../ink/ink.module').then( m => m.InkPageModule)
+            loadChildren: () => import('../compras/compras.module').then( m => m.ComprasPageModule)
           }
         ]
       },

@@ -1,0 +1,118 @@
+.swiper-slide img {
+    width: 90%;
+}
+
+// ion-item{
+// --border-color:red;
+// --border-radius:20px;
+// }
+ion-item{
+    border-radius: 10px;
+    border: 1px solid #565656;
+    margin-bottom: 15px;
+    // background: rgb(60,60,60);
+    background: linear-gradient(360deg, rgba(60,60,60,1) 38%, rgba(77,77,77,1) 52%);
+}
+
+ion-button{
+    --border-color: #666666;
+    color: #666666;
+}
+
+.arrow-b{
+    position: relative;
+    top: 35px;
+    left: 5px;
+    font-size: 25px;
+    z-index: 9999;
+}
+
+.arrow-f{
+    position: relative;
+    top: 35px;
+    left: 83%;
+    font-size: 25px;
+    z-index: 9999;
+}
+.top-slides{
+   margin-top: -30px;
+}
+
+ion-slides img {
+    border-radius: 5px;
+}
+
+.slide-shadow{
+    background: #000000;
+    margin-right: 2px;
+}
+
+.border-r-5 {
+    border-radius: 50%;
+}
+
+span{
+    width: 20px;
+    height: 20px;
+}
+
+ion-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.ft-nombre{
+    font-size: 20px;
+ 
+    margin-left: 19%;
+
+    margin-bottom: 10px;
+}
+
+.puntos{
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
+
+.ft12seguidor{
+    font-size: 12px;
+}
+.ft12cantidad{
+    font-size: 12px;
+    text-align: right;
+}
+
+h2{
+    min-height: 30px;
+}
+
+ion-list ion-item{
+    margin-bottom: 0px !important;
+    border-radius: 10px;
+    --min-height: 30px;
+
+}
+
+.claseEspecial{
+    --background: #363636;
+}
+
+.padding-5-1{
+    padding: 5px;
+}
+
+.ft13icon{
+    width: 20px;
+    font-size: 13px;
+}
+.padding-5 {
+    padding: 0px;
+}
+.list-ios{
+    background: transparent;
+}
+
+.list-md{
+    background: transparent;
+}
