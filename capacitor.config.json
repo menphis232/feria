@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "feria",
+  "appName": "World Tattoo League",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

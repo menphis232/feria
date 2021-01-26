@@ -66,7 +66,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/home/ink',
+    redirectTo: '/home/map',
     pathMatch: 'full'
   }
 ];
