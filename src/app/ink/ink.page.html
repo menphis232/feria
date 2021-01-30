@@ -45,7 +45,7 @@
           </ion-label>
           <ion-button fill="outline" slot="end">Seguir</ion-button>
         </ion-item>
-        <p class="ion-padding-start">hola que tal soy el chico  de  las poesias</p>
+    
        </ion-col>
 
        <!-- <ion-col size="12">
@@ -62,7 +62,49 @@
         <p class="ion-padding-start">hola que tal soy el chico  de  las poesias</p>
        </ion-col> -->
      </ion-row>
+
         
     </ion-col>
+  
   </ion-row>
 </ion-grid>
+
+
+<ion-content>
+  <ion-col size="12">
+   
+      <ion-slides pager="true" [options]="slideOpts2">
+        <ion-slide>
+          <img src="../assets/slides/screen-1.jpg"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/slides/screen-1.jpg"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/slides/screen-1.jpg"/>
+        </ion-slide>
+      </ion-slides>
+      <p class="ion-padding-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+  </ion-col>
+
+  <!-- fab placed to the bottom end -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button >
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab  vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button >
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button class="anuel" >
+      <ion-icon  name="search"></ion-icon>
+    </ion-fab-button>
+    
+  </ion-fab>
+</ion-content>
+

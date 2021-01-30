@@ -16,6 +16,11 @@ export class InkPage implements OnInit {
    
   };
 
+  slideOpts2 = {
+    initialSlide: 1,
+    speed: 400
+  };
+
   constructor() { }
 
   ngOnInit() {
