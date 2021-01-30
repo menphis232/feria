@@ -12,6 +12,9 @@ export class InkPage implements OnInit {
     initialSlide: 0,
     slidesPerView: 3,
     speed: 400,
+    slidesPerGroup: 3,
+    grabCursor: true,
+    spaceBetween: 3
    
    
   };
