@@ -116,3 +116,17 @@ ion-list ion-item{
 .list-md{
     background: transparent;
 }
+
+ion-segment-button{
+    --indicator-color: transparent;
+    --indicator-height:0px;
+    border-radius: 5px 5px 0px 0px;
+    border:1px solid;
+    border-bottom: 0px;
+    font-size: 12px;
+    min-height: 35px;
+}
+ion-segment-button ion-label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class PerfilPage implements OnInit {
 
   constructor() { }
-
+  segment = 'participa'
   ngOnInit() {
   }
-
+  segmentChanged(event){
+    console.log(event)
+  }
 }
