@@ -1,0 +1,144 @@
+
+
+<ion-grid>
+  <ion-row>
+
+      <ion-img src="../assets/icon/barracorona.png"></ion-img>
+  
+  <ion-card class="fondo" size="12">    
+   
+    <ion-col class="espacio" size="12">
+      <ion-img src="../assets/icon/barradiamante.png"></ion-img>
+            
+              <ion-segment [(ngModel)]="segmento" class="espacio">
+                <ion-segment-button value="dia">
+                  <ion-label class="label">Dia</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="semana">
+                  <ion-label>Semana</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="mes">
+                  <ion-label>Mes</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="general">
+                  <ion-label>General</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="likes">
+                  <ion-label>Likes</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+
+        <ion-row *ngIf="segmento == 'dia'">
+
+          <ion-col size="12" class="espacio1">
+            <ion-item class="claseEspecial">
+              <ion-avatar class="avatar slide-shadow">
+                <img  src="../assets/icon/avatarranking.png">
+              </ion-avatar>
+              <ion-row>
+                    <ion-col>
+                      <ion-label>
+                        <span class="padding-5 border-r-5 slide-shadow"><ion-icon name="star" class="ft13icon"  color="primary"></ion-icon></span> <ion-text class="ft-nombre1">Alvaro Bruss</ion-text> 
+                        <p class="puntos"> <ion-text color="primary">480.000 ptos</ion-text></p>
+                      </ion-label>
+                    </ion-col> 
+              </ion-row>
+              <ion-button fill="outline" slot="end">Seguir</ion-button>
+            </ion-item>
+          </ion-col>
+          <ion-img src="../assets/icon/barradiamante.png"></ion-img>
+
+        </ion-row>
+        <ion-row *ngIf="segmento == 'semana'">
+
+           <ion-col size="12" class="espacio1">
+            <ion-item class="claseEspecial">
+              <ion-avatar class="avatar slide-shadow">
+                <img  src="../assets/icon/avatarranking.png">
+              </ion-avatar>
+              <ion-row>
+                    <ion-col>
+                      <ion-label>
+                        <span class="padding-5 border-r-5 slide-shadow"><ion-icon name="star" class="ft13icon"  color="primary"></ion-icon></span> <ion-text class="ft-nombre1">Alvaro Bruss</ion-text> 
+                        <p class="puntos"> <ion-text color="primary">480.000 ptos</ion-text></p>
+                      </ion-label>
+                    </ion-col> 
+              </ion-row>
+              <ion-button fill="outline" slot="end">Seguir</ion-button>
+            </ion-item>
+          </ion-col>
+          <ion-img src="../assets/icon/barradiamante.png"></ion-img>
+        </ion-row>
+
+        <ion-row *ngIf="segmento == 'mes'">
+
+         <ion-col size="12" class="espacio1">
+            <ion-item class="claseEspecial">
+              <ion-avatar class="avatar slide-shadow">
+                <img  src="../assets/icon/avatarranking.png">
+              </ion-avatar>
+              <ion-row>
+                    <ion-col>
+                      <ion-label>
+                        <span class="padding-5 border-r-5 slide-shadow"><ion-icon name="star" class="ft13icon"  color="primary"></ion-icon></span> <ion-text class="ft-nombre1">Alvaro Bruss</ion-text> 
+                        <p class="puntos"> <ion-text color="primary">480.000 ptos</ion-text></p>
+                      </ion-label>
+                    </ion-col> 
+              </ion-row>
+              <ion-button fill="outline" slot="end">Seguir</ion-button>
+            </ion-item>
+          </ion-col>
+          <ion-img src="../assets/icon/barradiamante.png"></ion-img>
+        </ion-row> 
+        
+        <ion-row *ngIf="segmento == 'general'">
+
+          <ion-col size="12" class="espacio1">
+            <ion-item class="claseEspecial">
+              <ion-avatar class="avatar slide-shadow">
+                <img  src="../assets/icon/avatarranking.png">
+              </ion-avatar>
+              <ion-row>
+                    <ion-col>
+                      <ion-label>
+                        <span class="padding-5 border-r-5 slide-shadow"><ion-icon name="star" class="ft13icon"  color="primary"></ion-icon></span> <ion-text class="ft-nombre1">Alvaro Bruss</ion-text> 
+                        <p class="puntos"> <ion-text color="primary">480.000 ptos</ion-text></p>
+                      </ion-label>
+                    </ion-col> 
+              </ion-row>
+              <ion-button fill="outline" slot="end">Seguir</ion-button>
+            </ion-item>
+          </ion-col>
+          <ion-img src="../assets/icon/barradiamante.png"></ion-img>
+        </ion-row> 
+
+        <ion-row *ngIf="segmento == 'likes'">
+          <ion-col size="12" class="espacio1">
+            <ion-item class="claseEspecial">
+              <ion-avatar class="avatar slide-shadow1">
+                <img  src="../assets/icon/cuadroranking.png">
+              </ion-avatar>
+              <ion-row>
+                    <ion-col>
+                      <ion-label>
+                        <span class="padding-5 border-r-5 slide-shadow"><ion-icon name="star" class="ft13icon"  color="primary"></ion-icon></span> <ion-text class="ft-nombre1">Alvaro Bruss</ion-text> 
+                        <p class="puntos"> <ion-text color="primary">480.000 ptos</ion-text></p>
+                      </ion-label>
+                    </ion-col> 
+              </ion-row>
+              <ion-button fill="outline" slot="end">Seguir</ion-button>
+            </ion-item>
+          </ion-col> 
+          <ion-img src="../assets/icon/barradiamante.png"></ion-img>
+        </ion-row> 
+
+
+       </ion-col>
+
+     
+    </ion-card>
+  
+          
+
+  </ion-row>
+</ion-grid>

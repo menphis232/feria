@@ -39,7 +39,7 @@
             <img  src="../assets/icon/avatarNativo.png">
           </ion-avatar>
           <ion-row>
-            <ion-col sice="12">
+            <ion-col size="12">
               <ion-label>
             
                 <span class="padding-5 border-r-5 slide-shadow"><ion-icon name="star" class="ft13icon"  color="primary"></ion-icon></span> <ion-text class="ft-nombre">Alvaro Bruss</ion-text> 
@@ -82,14 +82,17 @@
             </ion-segment-button>
           </ion-segment>
           <ion-row *ngIf="segment == 'participa'">
-            <p>participa</p>
+            <p>Participa</p>
           </ion-row>
+
           <ion-row *ngIf="segment == 'videos'">
             <p>videos</p>
           </ion-row>
+
           <ion-row *ngIf="segment == 'ranking'">
-            <p>ranking</p>
+              <p>Ranking</p>
           </ion-row>
+
         </ion-col>
       </ion-row>
     </ion-col>
