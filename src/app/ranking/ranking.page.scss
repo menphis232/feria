@@ -13,6 +13,17 @@ ion-item{
     // background: rgb(60,60,60);
     background: linear-gradient(360deg, rgba(60,60,60,1) 38%, rgba(77,77,77,1) 52%);
 }
+.espacio{
+    margin-top: 8%;
+}
+.espacio1{
+    margin-top: 3%;
+  
+}
+
+.fondo{
+    background: #4C4C4C4C;
+}
 
 
 ion-button{
@@ -45,7 +56,14 @@ ion-slides img {
 
 .slide-shadow{
     background: #000000;
-    margin-right: 2px;
+    margin-right: 5px;
+}
+
+.slide-shadow1{
+    background: #000000;
+    margin-right: 5px;
+    border-radius: 1px;
+    
 }
 
 .border-r-5 {
@@ -57,12 +75,6 @@ span{
     height: 20px;
 }
 
-
-
-ion-avatar {
-    width: 100px;
-    height: 100px;
-}
 .avatar{
     width: 60px;
     height: 60px;
@@ -82,7 +94,8 @@ ion-avatar {
     margin-bottom: 10px;
 }
 .ft-nombre1{
-margin-left: auto;   
+margin-left: auto;
+font-size: 20px;   
 }
     
 
@@ -137,67 +150,18 @@ ion-list ion-item{
 ion-segment-button{
     --indicator-color: transparent;
     --indicator-height:0px;
-    border-radius: 5px 5px 0px 0px;
-    border:1px solid #494949;
-    border-bottom: 0px;
-    font-size: 12px;
-    min-height: 35px;
-    --background: #363636;
-    --background-checked: #5d5d5d;
-}
+    border-radius: 60px 60px 60px 60px;
+    border:1px solid;
+    border-bottom:0px;
+    font-size: 10px;
+    min-height: 5px;
+    height: 20px;
+    min-width: 5px;
+ 
+  }
+
 ion-segment-button ion-label{
     margin-top: 5px;
     margin-bottom: 5px;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 3px;
+ 
 }
-.bg-folder{
-background-color: #5d5d5d;
-}
-.contenido img{
-    border-radius: 5px;
-    width: 6rem;
-}
-.ranking-top{
-    padding: 3px;
-    border:2px solid;
-    border-color: var(--ion-color-primary);
-    border-radius: 5px;
-}
-// ion-segment-button::before{
-//     content:"";
-//     position:absolute;
-//     right:-30px;
-//     width: 0; 
-//     height: 0; 
-//     border-left: 30px solid transparent;
-//     border-right: 30px solid transparent;
-//     border-top: 30px solid #ccc;
-//     z-index:-1;
-// }
-
-// ion-segment-button:after {
-//     content: '';
-//     width: 35px;
-//     height: 35px;
-//     position: absolute;
-//     top: -5px;
-//     right: -30px;
-//     border:30px solid #fff;
-//     border-radius:50px;
-//     border-color:red;
-//     border-color:transparent #fff transparent transparent;
-//     transform:rotate(-45deg);    
-//   }
-//   ion-segment-button:before {
-//     content: '';
-//     background:#000; 
-//   background:#fff;
-//   width: 130px;
-//   height: 40px;
-//   top:-15px;
-//   left:85px;
-//   position: absolute;
-//   border-radius:0px 20px;
-// }

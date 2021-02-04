@@ -62,6 +62,24 @@ const routes: Routes = [
           }
         ]
       },
+      {
+        path: 'ranking',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../ranking/ranking.module').then( m => m.RankingPageModule)
+          }
+        ]
+      },
+      {
+        path: 'detalles',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../detalles/detalles.module').then( m => m.DetallesPageModule)
+          }
+        ]
+      },
     ]
   },
   {
