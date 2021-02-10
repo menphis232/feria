@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NavParams, NavController, IonSlides, Platform,LoadingController, AlertController  } from '@ionic/angular';
+import { NavParams, IonSlides, Platform,LoadingController, AlertController  } from '@ionic/angular';
 import { NavigationExtras } from '@angular/router';
 import { environment } from "../../environments/environment";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-compras',
@@ -21,7 +22,7 @@ export class ComprasPage implements OnInit {
   loading
   mostrarGif=true
 
-  constructor(private navCtrl: NavController,private alertContrl: AlertController,public loadingCtrl: LoadingController) { }
+  constructor(private router: Router,private alertContrl: AlertController,public loadingCtrl: LoadingController) { }
 
   ngOnInit() {
   }

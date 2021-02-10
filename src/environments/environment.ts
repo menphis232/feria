@@ -3,8 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  SITE_URL : 'localhost',
+  //SITE_URL : 'http://localhost:8000',
+  API_URL : 'localhost' + '/api',
+  TOKEN_KEY : 'auth-token',
+  USER_KEY : 'auth-username',
+  PASS_KEY : 'auth-password',
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file

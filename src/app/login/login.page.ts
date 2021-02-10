@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, Validators, } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
-import { NavParams,LoadingController, Platform, NavController, AlertController} from '@ionic/angular';
+import { Router } from '@angular/router';
+import { NavParams,LoadingController, Platform, AlertController} from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -12,15 +13,12 @@ export class LoginPage implements OnInit {
 
   password = '';
   email = '';
-  public formGroup: FormGroup;
+
   isLoadingPresent = false
   loading
 
-  constructor(private navCtrl: NavController,public alertCtrl: AlertController,public loadingCtrl: LoadingController,public auth: AuthService,private fb: FormBuilder) {
-    this.formGroup = this.fb.group({
-      email: ['', Validators.compose([Validators.required])],
-      password: ['', Validators.compose([Validators.required])]
-    });
+  constructor(public router: Router,public alertCtrl: AlertController,public loadingCtrl: LoadingController,public auth: AuthService) {
+
    }
 
   ngOnInit() {
@@ -33,13 +31,9 @@ export class LoginPage implements OnInit {
       return;
     }else{
 
-       console.log('email',this.email)
-       console.log('password',this.password)
 
-       this.formGroup.controls['email'].setValue(this.email);
-       this.formGroup.controls['password'].setValue(this.password);
       this.displayLoading();
-      let data = this.formGroup.value;
+      let data = {email:this.email,password:this.password};
       // this.service.loginp(data);
       try {
         // Iniciamos la consulta
@@ -48,7 +42,7 @@ export class LoginPage implements OnInit {
       
         //   localStorage.setItem('token', res.access_token);
         //   localStorage.setItem('user', JSON.stringify(res.user));
-        //    this.navCtrl.navigateRoot('/');
+        //    this.router.navigateRoot('/');
         //   this.dismissLoading();
         // }, e => {
         //   //En caso de error

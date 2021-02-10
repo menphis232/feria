@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NavParams, NavController, IonSlides, Platform } from '@ionic/angular';
+import { NavParams, IonSlides, Platform } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ink',
