@@ -21,7 +21,9 @@ export class InkPage implements OnInit {
   };
 
   slideOpts2 = {
-    initialSlide: 1,
+    initialSlide: 0,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     speed: 400
   };
 
