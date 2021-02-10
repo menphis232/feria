@@ -30,12 +30,13 @@ export class LoginPage implements OnInit {
    console.log('campos vacios')
       return;
     }else{
-
+      localStorage.setItem('token','1234')
 
       this.displayLoading();
       let data = {email:this.email,password:this.password};
       // this.service.loginp(data);
-      try {
+      // try {
+        this.router.navigateByUrl('/')
         // Iniciamos la consulta
         // this.auth.login(data).subscribe((res: any) => {
         //   //Almacenamos en local storage el nombre del usuario
@@ -51,12 +52,12 @@ export class LoginPage implements OnInit {
         //   console.error(e);
         // })
   
-      }
-      catch (e) {
-        this.dismissLoading();
-        this.presentAlert("Error Inseperado", e.error.message ? e.error.message : "Contacte con soporte");
-        console.error(e);
-      }
+      // }
+      // catch (e) {
+      //   this.dismissLoading();
+      //   this.presentAlert("Error Inseperado", e.error.message ? e.error.message : "Contacte con soporte");
+      //   console.error(e);
+      // }
     }
     
   }
