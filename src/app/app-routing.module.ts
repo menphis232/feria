@@ -1,14 +1,76 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import { MainTabsComponent } from './pages/main-tabs/main-tabs.component';
+
 const routes: Routes = [
-  {
+  /* {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  }, */
+  {
+    path: 'auth',
+    loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthModule)
+  },
+  {
+    path: 'tabs',
+    component: MainTabsComponent,
+    children: [
+      {
+        path: 'home',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+          }
+        ],
+      },
+      {
+        path: 'tab2',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+          }
+        ],
+      },
+      {
+        path: 'tab3',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+          }
+        ],
+      },
+      {
+        path: 'shop',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./pages/shop/shop.module').then( m => m.ShopPageModule)
+          }
+        ],
+      },
+      {
+        path: 'profile',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+          }
+        ],
+      },
+      {
+        path: '',
+        redirectTo: '/tabs/home',
+        pathMatch: 'full'
+      }
+    ]
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'auth',
     pathMatch: 'full'
   },
 ];
