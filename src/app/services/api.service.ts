@@ -23,4 +23,12 @@ export class ApiService {
       return emptyToken;
     }
   }
+
+  async requestToken() {
+    try {
+      return await this.http.get<iToken>(`${API_URL}auth/token`).toPromise();
+    } catch (e) {
+      return emptyToken;
+    }
+  }
 }
