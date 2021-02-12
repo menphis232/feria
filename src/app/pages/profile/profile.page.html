@@ -1,9 +1,86 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-perfil
+  <ion-grid>
+    <ion-row class="main-card">
+      <ion-col size="5">
+        <img class="profile-img" src="./assets/addProfileImage.png">
+      </ion-col>
+      <ion-col size="7">
+        <ion-grid>
+          <ion-row class="ion-text-center">
+            <ion-col class="username">
+              {{ user.username }}
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+              <ion-text color="secondary">
+                {{ user.points | pointsFormat }} <small>PTOS</small>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row class="with-border ion-margin-top">
+            <ion-col size="8" class="ion-text-start">
+              <ion-label>Seguidores:</ion-label>
+            </ion-col>
+            <ion-col size="4" class="ion-text-end">
+              <ion-label>{{ user.following | numberPad:'4' }}</ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row class="with-border">
+            <ion-col size="8" class="ion-text-start">
+              <ion-label>Seguidos:</ion-label>
+            </ion-col>
+            <ion-col size="4" class="ion-text-end">
+              <ion-label>{{ user.followers | numberPad:'4' }}</ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-segment [value]="currentSegment" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="join">
+            <ion-label>Participa</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="videos">
+            <ion-label>Videos</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="ranking">
+            <ion-label>Ranking</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+
+        <ion-row *ngIf="currentSegment == 'join'">
+          <p>Participa</p>
+        </ion-row>
+
+        <ion-row *ngIf="currentSegment == 'videos'">
+          <p>Videos</p>
+        </ion-row>
+
+        <ion-row *ngIf="currentSegment == 'ranking'">
+          <p>Ranking</p>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button class="anuel">
+      <ion-icon name="search"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

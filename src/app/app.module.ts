@@ -22,7 +22,10 @@ import { InterceptorService } from './services/interceptor.service';
 import { MainTabsComponent } from './pages/main-tabs/main-tabs.component';
 
 @NgModule({
-  declarations: [AppComponent, MainTabsComponent],
+  declarations: [
+    AppComponent,
+    MainTabsComponent
+  ],
   entryComponents: [],
   imports: [
     BrowserModule,
