@@ -15,6 +15,8 @@ import { AuthService } from './services/auth.service';
 })
 export class AppComponent {
   
+  private dark: boolean;
+
   private hasPermission: boolean;
   private token: string;
   private pushPayload: INotificationPayload;
@@ -26,6 +28,7 @@ export class AppComponent {
     private fcm: FCM,
     public authService: AuthService
   ) {
+    this.dark = true;
     this.initializeApp();
   }
 
@@ -35,6 +38,16 @@ export class AppComponent {
       this.splashScreen.hide();
       this.authService.loadJwToken();
       this.setupFCM();
+
+      document.body.classList.toggle('dark', true);
+
+      /* prefersColor.addEventListener(
+        'change',
+        mediaQuery => {
+          this.dark = mediaQuery.matches;
+          this.updateDarkMode();
+        }
+      ); */
     });
   }
 
