@@ -30,7 +30,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+            loadChildren: () => import('./pages/distributes/distributes.module').then( m => m.DistributesPageModule)
           }
         ],
       },
@@ -39,7 +39,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+            loadChildren: () => import('./pages/wtl/wtl.module').then( m => m.WtlPageModule)
           }
         ],
       },
@@ -69,10 +69,23 @@ const routes: Routes = [
     ]
   },
   {
-    path: '',
+    path: 'splash',
     redirectTo: 'auth',
     pathMatch: 'full'
   },
+ 
+  {
+    path: 'splee',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
+  },
+  {
+    path: 'wtl',
+    loadChildren: () => import('./pages/wtl/wtl.module').then( m => m.WtlPageModule)
+  },
+
+  
+
+
 ];
 
 @NgModule({

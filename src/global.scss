@@ -42,13 +42,28 @@
   &.diamond {
     background-image: url(./assets/bar_diamond.png);
   }
+  &.organizan {
+    background-image: url(./assets/bar_organizan.png);
+  }
+  &.distribuyen {
+    background-image: url(./assets/bar_distribuyen.png);
+  }
 }
 
 .with-wave {
   border: 1px solid var(--ion-color-medium);
-  padding: 5px;
+  padding: 1px;
   margin: 5px;
   border-radius: 15px;
+  background: url(./assets/wave.svg) no-repeat top center, #393939;
+  background-size: cover;
+}
+
+.with-waveButon {
+  border: 1px solid var(--ion-color-medium);
+  // padding: 1px;
+  // margin: 5px;
+  // border-radius: 15px;
   background: url(./assets/wave.svg) no-repeat top center, #393939;
   background-size: cover;
 }

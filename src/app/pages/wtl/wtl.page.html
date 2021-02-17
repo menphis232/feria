@@ -1,0 +1,120 @@
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <ion-row>
+        <div class="arrow-b" (click)="slidePrev()">
+          <ion-icon color="medium" name="caret-back"></ion-icon>
+        </div>
+        <div class="arrow-f" (click)="slideNext()">
+          <ion-icon color="medium" name="caret-forward"></ion-icon>
+        </div>
+        <ion-slides #slideHistoria pager="false" [options]="slideOpts" class="top-slides">
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+   
+        </ion-slides>
+      </ion-row>
+    </ion-col>
+    <ion-col size="12">
+      
+        <div class="app-bar diamond"></div>
+  
+      <!-- <img src="../assets/icon/barrita.png"/> -->
+    </ion-col>
+    <ion-col size="12">
+  
+     <ion-row>
+       <ion-col size="12">
+        <ion-item class="with-wave">
+          <ion-avatar slot="start">
+            <img src="../assets/slides/screen-1.jpg"/>
+          </ion-avatar>
+          <ion-label>
+            
+            <h2><ion-icon name="star" color="danger"></ion-icon> H2 Title Text</h2>
+            <p>25.000 <small>seguidores</small></p>
+          </ion-label>
+          <ion-button fill="outline" slot="end">Seguir</ion-button>
+        </ion-item>
+    
+       </ion-col>
+
+       <!-- <ion-col size="12">
+        <ion-item >
+          <ion-avatar slot="start">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+          </ion-avatar>
+          <ion-label>
+            <h2><ion-icon name="star" color="danger"></ion-icon> H2 Title Text</h2>
+            <p>25.000 <smal>seguidores</smal></p>
+          </ion-label>
+          <ion-button fill="outline" slot="end">Seguir</ion-button>
+        </ion-item>
+        <p class="ion-padding-start">hola que tal soy el chico  de  las poesias</p>
+       </ion-col> -->
+     </ion-row>
+
+        
+    </ion-col>
+  
+  </ion-row>
+</ion-grid>
+
+
+<ion-content>
+  <ion-col size="12">
+   
+    
+      <ion-slides pager="true" [options]="slideOpts2">
+        <ion-slide>
+          <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
+        </ion-slide>
+        <ion-slide>
+          <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
+        </ion-slide>
+        <ion-slide>
+          <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
+        </ion-slide>
+      </ion-slides>
+      <p class="ion-padding-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+  </ion-col>
+
+  <!-- fab placed to the bottom end -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button class="with-waveButon">
+      <ion-icon name="arrow-forward-circle" ></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab  vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button class="with-waveButon">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button class="anuel" >
+      <ion-icon  name="search"></ion-icon>
+    </ion-fab-button>
+    
+  </ion-fab>
+</ion-content>
+

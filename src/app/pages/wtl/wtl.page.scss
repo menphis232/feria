@@ -1,0 +1,98 @@
+.swiper-slide img {
+    width: 6.1rem;
+    // height: 86px;
+}
+
+// ion-item{
+// --border-color:red;
+// --border-radius:20px;
+// }
+ion-item{
+ 
+    border: 2px solid #818181;
+    --background:transparent;
+}
+
+ion-button{
+    --border-color: #666666;
+    color: #666666;
+}
+
+.arrow-b{
+    position: relative;
+    top: 35px;
+    left: 5px;
+    font-size: 25px;
+    z-index: 9999;
+}
+
+.arrow-f{
+    position: relative;
+    top: 35px;
+    left: 83%;
+    font-size: 25px;
+    z-index: 9999;
+}
+.top-slides{
+   margin-top: -30px;
+}
+
+ion-slides img {
+    border-radius: 5px;
+}
+
+.slide-shadow{
+    background: #1f1f1f;
+    margin-right: 3px;
+}
+
+.border-r-5 {
+    border-radius: 5px;
+}
+
+ion-slide{
+    width: auto !important;
+}
+
+.fab-horizontal-start{
+    left: inherit;
+   
+}
+ion-fab{
+    --border-radius: 9%;
+}
+
+.fab-horizontal-end {
+    right: calc(0px + var(--ion-safe-area-right, 0px));
+}
+
+ion-fab-button{
+    --border-radius:9%;
+    --background: transparent;
+}
+
+ion-fab-button ion-icon{
+    border: 2px solid #6f6f6f;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 4px; 
+    
+    color: #808080;
+}
+
+.anuel{
+    --background:transparent;
+    --box-shadow: transparent;
+}
+
+.button-native{
+    border: 2px solid #626262 !important;
+}
+.anuel ion-icon{
+    border:0px solid transparent;
+    --box-shadow: transparent;
+}
+
+.sliderPrincipal{
+    width: 100% !important;
+}

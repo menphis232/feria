@@ -1,0 +1,44 @@
+ion-item{
+    // border-radius: 20px;
+    border: 2px solid red;
+    // margin-bottom: 15px;
+    --background:transparent;
+
+}
+
+ion-button{
+    --border-color: #666666;
+    color: #666666;
+}
+
+.arrow-b{
+    position: relative;
+    top: 35px;
+    left: 5px;
+    font-size: 25px;
+    z-index: 9999;
+}
+
+.arrow-f{
+    position: relative;
+    top: 35px;
+    left: 83%;
+    font-size: 25px;
+    z-index: 9999;
+}
+.top-slides{
+   margin-top: -30px;
+}
+
+ion-slides img {
+    border-radius: 5px;
+}
+
+.slide-shadow{
+    background: #1f1f1f;
+    margin-right: 3px;
+}
+
+.border-r-5 {
+    border-radius: 5px;
+}

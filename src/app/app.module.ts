@@ -20,12 +20,12 @@ import { ApiService } from './services/api.service';
 import { InterceptorService } from './services/interceptor.service';
 
 import { MainTabsComponent } from './pages/main-tabs/main-tabs.component';
+import { SplashPageModule } from './pages/splash/splash.module'
+
+import { AndroidExoplayer } from '@ionic-native/android-exoplayer/ngx';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainTabsComponent
-  ],
+  declarations: [AppComponent, MainTabsComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
@@ -41,6 +41,7 @@ import { MainTabsComponent } from './pages/main-tabs/main-tabs.component';
     FCM,
     Camera,
     StatusBar,
+    AndroidExoplayer,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },

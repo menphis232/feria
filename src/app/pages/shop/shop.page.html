@@ -1,9 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>shop</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
 
-</ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <ion-row>
+        <div class="arrow-b" (click)="slidePrev()">
+          <ion-icon color="medium" name="caret-back"></ion-icon>
+        </div>
+        <div class="arrow-f" (click)="slideNext()">
+          <ion-icon color="medium" name="caret-forward"></ion-icon>
+        </div>
+        <ion-slides #slideHistoria pager="false" [options]="slideOpts" class="top-slides">
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+          <ion-slide>
+            <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
+          </ion-slide>
+   
+        </ion-slides>
+      </ion-row>
+    </ion-col>
+    <ion-col size="12">
+      
+        <div class="app-bar diamond"></div>
+
+    </ion-col>
+    <ion-col size="12">
+  
+      <h2>Alvaro Bruss</h2>
+      <ion-img  src="../assets/slides/screen-1.jpg"></ion-img>
+    </ion-col>
+
+    
+  </ion-row>
+</ion-grid>
