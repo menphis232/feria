@@ -10,6 +10,7 @@ export class ProfilePage implements OnInit {
 
   user: iUser;
   currentSegment: string;
+  segment = 'participa'
   
   constructor() { }
 

@@ -37,10 +37,11 @@
         </ion-grid>
       </ion-col>
     </ion-row>
+    <p class="ion-padding-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     <ion-row>
       <ion-col size="12">
-        <ion-segment [value]="currentSegment" (ionChange)="segmentChanged($event)">
-          <ion-segment-button value="join">
+        <ion-segment [(ngModel)]="segment">
+          <ion-segment-button value="participa">
             <ion-label>Participa</ion-label>
           </ion-segment-button>
           <ion-segment-button value="videos">
@@ -50,37 +51,54 @@
             <ion-label>Ranking</ion-label>
           </ion-segment-button>
         </ion-segment>
-
-        <ion-row *ngIf="currentSegment == 'join'">
-          <p>Participa</p>
+        <ion-grid class="contenido padding-0 bg-folder">
+        <ion-row *ngIf="segment == 'participa'">
+          <ion-row class="ranking-top">
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+          </ion-row>
         </ion-row>
 
-        <ion-row *ngIf="currentSegment == 'videos'">
-          <p>Videos</p>
+        <ion-row *ngIf="segment == 'videos'">
+          <ion-row>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+            <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
+          </ion-row>
         </ion-row>
 
-        <ion-row *ngIf="currentSegment == 'ranking'">
-          <p>Ranking</p>
+        <ion-row *ngIf="segment == 'ranking'">
+            <p>Ranking</p>
         </ion-row>
+      </ion-grid>
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-col>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+</ion-grid>
+<!-- fab placed to the bottom end -->
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button >
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 
-  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="home"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+<ion-fab  vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button >
+    <ion-icon name="home"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button class="anuel">
-      <ion-icon name="search"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button class="anuel" >
+    <ion-icon  name="search"></ion-icon>
+  </ion-fab-button>
+  
+</ion-fab>
 </ion-content>

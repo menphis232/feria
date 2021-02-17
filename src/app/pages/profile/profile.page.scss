@@ -9,3 +9,151 @@
     border: 1px solid var(--ion-color-medium);
     border-radius: 10px;
 }
+
+
+ion-avatar {
+  width: 100px;
+  height: 100px;
+}
+.avatar{
+  width: 60px;
+  height: 60px;
+}
+
+
+.avatarraking{
+  width: 50px;
+  height: 50px;
+}
+
+.ft-nombre{
+  font-size: 20px;
+
+  margin-left: 19%;
+
+  margin-bottom: 10px;
+}
+.ft-nombre1{
+margin-left: auto;   
+}
+  
+
+.puntos{
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+}
+
+.ft12seguidor{
+  font-size: 12px;
+}
+.ft12cantidad{
+  font-size: 12px;
+  text-align: right;
+}
+
+h2{
+  min-height: 30px;
+}
+
+ion-list ion-item{
+  margin-bottom: 0px !important;
+  border-radius: 10px;
+  --min-height: 30px;
+
+}
+
+.claseEspecial{
+  --background: #363636;
+}
+
+.padding-5-1{
+  padding: 5px;
+}
+
+.ft13icon{
+  width: 20px;
+  font-size: 13px;
+}
+.padding-5 {
+  padding: 0px;
+}
+.list-ios{
+  background: transparent;
+}
+
+.list-md{
+  background: transparent;
+}
+
+ion-segment-button{
+  --indicator-color: transparent;
+  --indicator-height:0px;
+  border-radius: 5px 5px 0px 0px;
+  border:1px solid #494949;
+  border-bottom: 0px;
+  font-size: 12px;
+  min-height: 35px;
+  --background: #363636;
+  --background-checked: #5d5d5d;
+}
+ion-segment-button ion-label{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3px;
+}
+.bg-folder{
+background-color: #5d5d5d;
+}
+.contenido img{
+  border-radius: 5px;
+  width: 6rem;
+}
+.ranking-top{
+  padding: 3px;
+  border:2px solid;
+  border-color: var(--ion-color-primary);
+  border-radius: 5px;
+}
+// ion-segment-button::before{
+//     content:"";
+//     position:absolute;
+//     right:-30px;
+//     width: 0; 
+//     height: 0; 
+//     border-left: 30px solid transparent;
+//     border-right: 30px solid transparent;
+//     border-top: 30px solid #ccc;
+//     z-index:-1;
+// }
+
+// ion-segment-button:after {
+//     content: '';
+//     width: 35px;
+//     height: 35px;
+//     position: absolute;
+//     top: -5px;
+//     right: -30px;
+//     border:30px solid #fff;
+//     border-radius:50px;
+//     border-color:red;
+//     border-color:transparent #fff transparent transparent;
+//     transform:rotate(-45deg);    
+//   }
+//   ion-segment-button:before {
+//     content: '';
+//     background:#000; 
+//   background:#fff;
+//   width: 130px;
+//   height: 40px;
+//   top:-15px;
+//   left:85px;
+//   position: absolute;
+//   border-radius:0px 20px;
+// }
+
+ion-row{
+  width: 100%;
+}
