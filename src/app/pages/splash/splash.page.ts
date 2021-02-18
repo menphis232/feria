@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AndroidExoplayer, AndroidExoPlayerParams } from '@ionic-native/android-exoplayer/ngx';
+// import { AndroidExoplayer, AndroidExoPlayerParams } from '@ionic-native/android-exoplayer/ngx';
 
 @Component({
   selector: 'app-splash',
@@ -8,7 +8,7 @@ import { AndroidExoplayer, AndroidExoPlayerParams } from '@ionic-native/android-
 })
 export class SplashPage implements OnInit {
 
-  constructor(private androidExoPlayer: AndroidExoplayer,) { }
+  constructor() { }
 
   ngOnInit() {
     this. start_video()
@@ -16,18 +16,18 @@ export class SplashPage implements OnInit {
 
 
   start_video(){
-    const params: AndroidExoPlayerParams = {
-      url: '../../../assets/presentacion.mp4',
-      hideTimeout: 100,
-      autoPlay: true,
-    }
+    // const params: AndroidExoPlayerParams = {
+    //   url: '../../../assets/presentacion.mp4',
+    //   hideTimeout: 100,
+    //   autoPlay: true,
+    // }
 
-    this.androidExoPlayer.show(params).subscribe(res => {
-      if (res.eventType == 'KEY_EVENT' || (res.eventType == 'STATE_CHANGED_EVENT' && res.playbackState == 'STATE_ENDED')) {
-        this.androidExoPlayer.close();
+    // this.androidExoPlayer.show(params).subscribe(res => {
+    //   if (res.eventType == 'KEY_EVENT' || (res.eventType == 'STATE_CHANGED_EVENT' && res.playbackState == 'STATE_ENDED')) {
+    //     this.androidExoPlayer.close();
  
-      }
-    });
+    //   }
+    // });
   }
 
 }

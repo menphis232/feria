@@ -68,8 +68,59 @@
   background-size: cover;
 }
 
-body {
+.body {
   background-image: url(./assets/descarga.png);
   // background-size: cover;
+  --background:url(./assets/descarga.png) cover;
   background-position: center;
+}
+
+.fab-horizontal-start{
+  left: inherit;
+ 
+}
+ion-fab{
+  --border-radius: 9%;
+}
+
+.fab-horizontal-end {
+  right: calc(0px + var(--ion-safe-area-right, 0px));
+}
+
+ion-fab-button{
+  --border-radius:9%;
+  --background: transparent;
+}
+
+ion-fab-button ion-icon{
+  border: 2px solid #6f6f6f;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 4px; 
+  color: #808080;
+}
+
+.anuel{
+  --background:transparent;
+  --box-shadow: transparent;
+}
+
+.button-native{
+  border: 2px solid #626262 !important;
+}
+.anuel ion-icon{
+  border:0px solid transparent;
+  --box-shadow: transparent;
+}
+.br-l{
+border-radius: 0 10px 10px 0;
+}
+.br-r{
+  border-radius: 10px 0 0 10px;
+}
+h2,p{
+  color: #fff;
+}
+.margin-b-4rem{
+  margin-bottom: 4rem;
 }

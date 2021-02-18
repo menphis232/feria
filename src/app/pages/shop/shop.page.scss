@@ -15,8 +15,9 @@ ion-item{
 }
 
 ion-button{
-    --border-color: #666666;
-    color: #666666;
+    --border-color: #7a7a7a;
+    color: #7a7a7a;
+    margin-top:-18px;
 }
 
 .arrow-b{
@@ -49,4 +50,8 @@ ion-slides img {
 
 .border-r-5 {
     border-radius: 5px;
+}
+.sc-ion-label-md-s>p {
+    color: #7a7a7a !important;
+    font-weight: 700;
 }

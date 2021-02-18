@@ -1,6 +1,5 @@
-
-
-<ion-grid>
+<ion-content class="body">
+<ion-grid class="margin-b-4rem">
   <ion-row>
     <ion-col size="12">
       <ion-row>
@@ -10,7 +9,7 @@
         <div class="arrow-f" (click)="slideNext()">
           <ion-icon color="medium" name="caret-forward"></ion-icon>
         </div>
-        <ion-slides #slideHistoria pager="false" [options]="slideOpts" class="top-slides">
+        <ion-slides #slideHistoria pager="false" [options]="slideOpts" class="top-slides slide-history">
           <ion-slide>
             <div class="padding-5 border-r-5 slide-shadow"><img src="../assets/slides/screen-1.jpg"/></div>
           </ion-slide>
@@ -76,36 +75,38 @@
     </ion-col>
   
   </ion-row>
+  <ion-row>
+    <ion-col size="12">
+     
+      
+        <ion-slides pager="true" [options]="slideOpts2">
+          <ion-slide>
+            <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
+          </ion-slide>
+          <ion-slide>
+            <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
+          </ion-slide>
+          <ion-slide>
+            <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
+          </ion-slide>
+        </ion-slides>
+        <p class="ion-padding-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    </ion-col>
+    </ion-row>
 </ion-grid>
+</ion-content>
 
 
-<ion-content>
-  <ion-col size="12">
-   
-    
-      <ion-slides pager="true" [options]="slideOpts2">
-        <ion-slide>
-          <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
-        </ion-slide>
-        <ion-slide>
-          <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
-        </ion-slide>
-        <ion-slide>
-          <img class="sliderPrincipal" src="../assets/slides/screen-1.jpg"/>
-        </ion-slide>
-      </ion-slides>
-      <p class="ion-padding-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-  </ion-col>
 
   <!-- fab placed to the bottom end -->
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
-    <ion-fab-button class="with-waveButon">
+    <ion-fab-button class="with-waveButon br-r">
       <ion-icon name="arrow-forward-circle" ></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
   <ion-fab  vertical="bottom" horizontal="start" slot="fixed">
-    <ion-fab-button class="with-waveButon">
+    <ion-fab-button class="with-waveButon br-l">
       <ion-icon name="home"></ion-icon>
     </ion-fab-button>
   </ion-fab>
@@ -116,5 +117,4 @@
     </ion-fab-button>
     
   </ion-fab>
-</ion-content>
 

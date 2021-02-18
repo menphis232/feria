@@ -69,8 +69,8 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'splash',
-    redirectTo: 'auth',
+    path: '',
+    redirectTo: 'tabs',
     pathMatch: 'full'
   },
  

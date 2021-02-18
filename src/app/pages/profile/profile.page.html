@@ -1,5 +1,5 @@
-<ion-content>
-  <ion-grid>
+<ion-coontent class="body">
+  <ion-grid class="margin-b-4rem">
     <ion-row class="with-wave">
       <ion-col size="5">
         <img class="profile-img" src="./assets/addProfileImage.png">
@@ -51,7 +51,7 @@
             <ion-label>Ranking</ion-label>
           </ion-segment-button>
         </ion-segment>
-        <ion-grid class="contenido padding-0 bg-folder">
+        <ion-grid class="contenido padding-0">
         <ion-row *ngIf="segment == 'participa'">
           <ion-row class="ranking-top">
             <ion-col size="4"><img src="../assets/slides/screen-1.jpg"/></ion-col>
@@ -79,18 +79,18 @@
       </ion-grid>
       </ion-col>
     </ion-row>
-  </ion-col>
 
 </ion-grid>
+</ion-coontent>
 <!-- fab placed to the bottom end -->
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button >
+  <ion-fab-button class="with-waveButon br-r">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
 </ion-fab>
 
 <ion-fab  vertical="bottom" horizontal="start" slot="fixed">
-  <ion-fab-button >
+  <ion-fab-button class="with-waveButon br-l">
     <ion-icon name="home"></ion-icon>
   </ion-fab-button>
 </ion-fab>
@@ -101,4 +101,3 @@
   </ion-fab-button>
   
 </ion-fab>
-</ion-content>
